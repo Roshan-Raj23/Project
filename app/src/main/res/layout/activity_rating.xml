@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:fontFamily="monospace"
+        android:gravity="center_horizontal"
+        android:text="Rating"
+        android:layout_marginTop="20dp"
+        android:paddingTop="20dp"
+        android:textColor="#000000"
+        android:textSize="43dp"
+        tools:text="FeedBack " />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginBottom="30dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/rating"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="73dp"
+            android:layout_gravity="center_horizontal"
+            android:numStars="5"
+            android:progressBackgroundTint="@color/white"
+            android:progressTint="#FFFF00" />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:backgroundTint="#ffffff"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Enter your FeedBack Here"
+        android:textColor="#716B6B"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:padding="15dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/round_corner"
+        android:textColorHint="#716B6B" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:textSize="25dp"
+        android:fontFamily="cursive"
+        android:text="Submit Feedback" />
+
+</LinearLayout>

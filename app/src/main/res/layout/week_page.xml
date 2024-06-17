@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/weekPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingConstraints"
+    tools:context=".MainPage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/weekDays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Monday"
+                android:padding="15dp"
+                android:layout_margin="10dp"
+                android:onClick="mondayCall"
+                android:background="@drawable/round_corner_week_page"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tuesday"
+                android:padding="15dp"
+                android:layout_margin="10dp"
+                android:onClick="tuesdayCall"
+                android:background="@drawable/round_corner_week_page"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wednesday"
+                android:padding="15dp"
+                android:layout_margin="10dp"
+                android:onClick="wednesdayCall"
+                android:background="@drawable/round_corner_week_page"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thursday"
+                android:padding="15dp"
+                android:layout_margin="10dp"
+                android:onClick="ThursdayCall"
+                android:background="@drawable/round_corner_week_page"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Friday"
+                android:padding="15dp"
+                android:layout_margin="10dp"
+                android:onClick="fridayCall"
+                android:background="@drawable/round_corner_week_page"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saturday"
+                android:padding="15dp"
+                android:layout_margin="10dp"
+                android:onClick="saturdayCall"
+                android:background="@drawable/round_corner_week_page"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sunday"
+                android:padding="15dp"
+                android:layout_margin="10dp"
+                android:onClick="sundayCall"
+                android:background="@drawable/round_corner_week_page"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityTuesday">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/header_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BREAKFAST"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/breakfastLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!-- First Vertical Column -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <!-- Each Card -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/aloo_paratha" />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:text="Aloo Paratha"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/milk" />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:text="Milk"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <!-- Second Vertical Column -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/bread_butter_jam" />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:text="Bread Butter Jam"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/tea" />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:text="Tea"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lunchText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LUNCH"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/lunchLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!-- First Vertical Column -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <!-- Each Card -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/desi_chana_gravy" />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:text="Desi Chana Gravy"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/dal_fry" />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:text="Dal"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/chapaati" />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:text="Chapati"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Second Vertical Column -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/chach" />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:text="Chach"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/matar_pulao" />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:text="Matar Pulao"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/salad" />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:text="Salad"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/snacksText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SNACKS"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+            <LinearLayout
+                android:id="@+id/snacksLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!-- First Vertical Column -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/sabudana" />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:text="Sabudana"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Second Vertical Column -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/tea" />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:text="Tea"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/dinnerText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DINNER"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+            <LinearLayout
+                android:id="@+id/dinnerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!-- First Vertical Column -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/bhindi" />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:text="Bhindi"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/rice" />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:text="Rice"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/salad" />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:text="Salad"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <!-- Second Vertical Column -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/chapaati" />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:text="Chapati"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/pickle" />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:text="Pickle"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/jalebi" />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:text="Jalebi"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
